@@ -1,4 +1,4 @@
-//Problem name: 1911A 
+//Problem name: 1911A (Way-2)
 //https://codeforces.com/contest/1911/problem/A
 
 #include<bits/stdc++.h>
