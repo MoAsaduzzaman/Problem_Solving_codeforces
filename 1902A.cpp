@@ -4,12 +4,8 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-void isPossible(){
-    int n;
-    cin>>n;
-    string s;
-    cin>>s;
-
+string asad(int n, string s){
+    
     int count1 = 0;
     int count2 = 0;
 
@@ -22,21 +18,26 @@ void isPossible(){
     }
 
     if(count2 > count1){
-        cout<<"YES"<<endl;
+        return "YES";
     }else{
-        if(count2 == 0){
-            cout<<"NO"<<endl;
+        if(count2 != 0){
+            return "YES";
         }else{
-            cout<<"YES"<<endl;
+            return "NO";
         }
     }
 }
 
 int main(){
-    int t=1;
-    cin>>t;
-    while(t--){
-        isPossible();
+    int t;
+    cin >> t;
+    while(t){
+        int n;
+        cin >> n;
+        string s;
+        cin >> s;
+        cout << asad(n,s) << endl;
+        t--;
     }
     return 0;
 }
